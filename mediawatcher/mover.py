@@ -58,7 +58,7 @@ class MediaWatcherMover(object):
         if move_path.exists():
             raise FileExistsError('{} already exists, ignoring.'.format(move_path))
         if not self.config.mock:
-            shutil.move(path, str(move_path))
+            shutil.move(str(path), str(move_path))
         self.logger.info('Moved movie from {} to {}'.format(path, move_path))
 
     def lookup_tv(self, path, guess):
@@ -74,7 +74,7 @@ class MediaWatcherMover(object):
         if move_path.exists():
             raise FileExistsError('{} already exists, ignoring.'.format(move_path))
         if not self.config.mock:
-            shutil.move(path, str(move_path))
+            shutil.move(str(path), str(move_path))
         self.logger.info('Moved tv episode from {} to {}'.format(path, move_path))
 
     def lookup_anime(self, path, guess):
@@ -87,5 +87,5 @@ class MediaWatcherMover(object):
         if move_path.exists():
             raise FileExistsError('{} already exists, ignoring.'.format(move_path))
         if not self.config.mock:
-            shutil.move(path, str(move_path))
+            shutil.move(str(path), str(move_path))
         self.logger.info('Moved anime episode from {} to {}'.format(path, move_path))
