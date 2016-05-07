@@ -27,6 +27,7 @@ setup(
     keywords='media watcher rename',
     packages=['mediawatcher'],
     install_requires=['guessit', 'logbook', 'watchdog', 'pyyaml'],
+    include_package_data=True,
     extras_require={
         'dev': [],
         'test': ['nose', 'coverage'],

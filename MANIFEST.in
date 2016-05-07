@@ -1,0 +1,3 @@
+recursive-include mediawatcher *.py *.yml *.txt *.ini
+recursive-exclude mediawatcher *.pyc
+include *.md
