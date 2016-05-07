@@ -26,13 +26,12 @@ class MediaWatcher(object):
         self.handler = MediaWatcherHandler(self.mover, self.logger)
         self.observer = Observer()
         self.setup_watch()
-        self.logger.info('MediaWatcher ready. Performing initial scan.')
-        self.scan()
-        self.logger.info('Initial scan done, watching {} folder{}'.format(len(self.config.watch), 's' if len(self.config.watch) != 1 else ''))
-        self.watch()
 
-    def scan(self):
+    def startup(self):
+        self.logger.info('Performing initial scan.')
         self.mover.scan()
+        self.logger.info('Initial scan done, ready to watch {} folder{}.'.format(len(self.config.watch), 's' if len(
+            self.config.watch) != 1 else ''))
 
     def setup_watch(self):
         for directory in self.config.watch:

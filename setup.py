@@ -1,11 +1,10 @@
-from setuptools import setup, find_packages
-# To use a consistent encoding
 from codecs import open
 from os import path
 
+from setuptools import setup
+
 here = path.abspath(path.dirname(__file__))
 
-# Get the long description from the README file
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 

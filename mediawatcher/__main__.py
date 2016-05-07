@@ -16,6 +16,7 @@ def main():
         config_yaml = yaml.load(f)
 
     watcher = MediaWatcher({**MediaWatcher.default_config, **config_yaml})
+    watcher.startup()
     watcher.watch()
 
 if __name__ == '__main__':

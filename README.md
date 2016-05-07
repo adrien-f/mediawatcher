@@ -42,6 +42,11 @@ And then, run mediawatcher:
 
 ```
 mediawatcher -c ~/.mediawatcher
+[2016-05-07 16:27:15.165334] INFO: MediaWatcher: MediaWatcher ready. Performing initial scan.
+[2016-05-07 16:27:15.165466] INFO: MediaWatcher: Scanning /data/downloads
+...
+[2016-05-07 16:27:15.874268] INFO: MediaWatcher: Done scanning.
+[2016-05-07 16:27:15.874309] INFO: MediaWatcher: Initial scan done, watching 1 folder.
 ```
 
 ### License
