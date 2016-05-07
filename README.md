@@ -1,4 +1,6 @@
 # MediaWatcher
+[![PyPI](https://img.shields.io/pypi/v/mediawatcher.svg?maxAge=2592000)](https://pypi.python.org/pypi/mediawatcher) [![PyPI](https://img.shields.io/pypi/pyversions/mediawatcher.svg?maxAge=2592000)](https://pypi.python.org/pypi/mediawatcher)
+
 
 Watch directories and move media files accordingly.
 
