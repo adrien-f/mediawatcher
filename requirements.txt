@@ -4,7 +4,7 @@ guessit==2.0.5
 Logbook==0.12.5
 pathtools==0.1.2
 python-dateutil==2.5.1
-PyYAML==3.11
+PyYAML==5.4
 rebulk==0.7.2
 six==1.10.0
 watchdog==0.8.3
