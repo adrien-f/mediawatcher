@@ -8,4 +8,4 @@ PyYAML==3.11
 rebulk==0.7.2
 six==1.10.0
 watchdog==0.8.3
-wheel==0.24.0
+wheel==0.38.1
